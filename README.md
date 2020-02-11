@@ -15,7 +15,28 @@ devtools::install_github("martinctc/modeltoolbox")
 ```
 ---
 
+### Example
 
+The `run_hclust()` function allows you to run hierarchical clustering straight from a tibble:
+```
+library(modeltoolbox)
+library(tidyverse)
+
+iris %>%
+  select(-Species) %>%
+  run_hclust(method = "complete", dmeth = "euclidean")
+```
+
+The function then returns a `hclust` object:
+```
+Call:
+hclust(d = dist(x, method = dmeth), method = method)
+
+Cluster method   : complete 
+Distance         : euclidean 
+Number of objects: 150 
+```
+---
 This package is currently still under development, so it does come with a health warning: if you do wish to use them - have a check and run through the examples before assimilating them into your analysis. 
 
 ---
