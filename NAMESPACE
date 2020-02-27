@@ -3,5 +3,7 @@
 export(calc_pc_loglin)
 export(root_it)
 export(run_hclust)
+export(run_vm_loadings)
 import(dplyr)
 import(magrittr)
+importFrom(psych,principal)
