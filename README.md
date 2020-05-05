@@ -1,5 +1,7 @@
 # modeltoolbox
 
+[![R build status](https://github.com/martinctc/modeltoolbox/workflows/R-CMD-check/badge.svg)](https://github.com/martinctc/modeltoolbox/actions)
+
 This package contains support or convenience functions for modelling in R. Since the functions for this package originated from taking functions from a diverse range of modelling tasks/projects, these functions are not specific to particular types of models.
 
 ---
